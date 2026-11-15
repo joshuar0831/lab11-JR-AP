@@ -40,5 +40,5 @@ def logarithm(a, b):
         raise ValueError("Invalid arguments for logarithm.")
     return math.log(b, a)
 
-def exponent(a, b):
+def exp(a, b):
     return a ** b
