@@ -1,9 +1,6 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
+# https://github.com/joshuar0831/lab11-JR-AP.git
+# Partner 1: Joshua Rayen
+# Partner 2: Alexandre Pery
 import math
 
 
