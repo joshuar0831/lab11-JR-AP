@@ -4,8 +4,7 @@ calculator.py
 
 One function per operation, in order.
 """
-# First example
-
+import math
 
 
 def square_root(a):
@@ -21,8 +20,6 @@ def hypotenuse(a, b):
         return math.hypot(a, b)
     except TypeError:
         print("Enter a valid number")
-
-import math
 
 def add(a, b):
     return a + b
