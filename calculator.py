@@ -6,7 +6,7 @@ One function per operation, in order.
 """
 # First example
 
-import math
+
 
 # def square_root(a):
 #     if a < 0:
@@ -16,43 +16,26 @@ import math
 # def hypotenuse(a, b):
 #     return math.hypot(a, b)
 
+import math
+
 def add(a, b):
-    try:
-        return a+b
-    except TypeError:
-        print("Enter a valid number")
+    return a + b
 
 def subtract(a, b):
-    try:
-        return a-b
-    except TypeError:
-        print("Enter a valid number")
+    return a - b
 
 def multiply(a, b):
-    try:
-        return a*b
-    except TypeError:
-        print("Enter a valid number")
+    return a * b
 
 def divide(a, b):
     if a == 0:
-        raise ZeroDivisionError("Division by zero (a cannot be 0)")
+        raise ZeroDivisionError("Denominator cannot be zero.")
     return b / a
 
 def logarithm(a, b):
-    if a <= 0 or b <= 0:
-        raise ValueError("Invalid argument for logarithm")
+    if a <= 0 or b <= 0 or a == 1:
+        raise ValueError("Invalid arguments for logarithm.")
     return math.log(b, a)
 
 def exponent(a, b):
-    try:
-        return a**b
-    except TypeError:
-        print("Enter a valid number")
-
-
-
-
-
-
-
+    return a ** b
